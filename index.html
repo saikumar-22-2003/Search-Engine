@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+</head>
+<!-- ✅ Add this in the <head> or before </body>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.19.1/dist/algoliasearch-lite.umd.js"></script>
+<script>
+  const client = algoliasearch('889P33SWIA', 'a4057f50694f963b92d7695df51ac273');
+  const index = client.initIndex('Search');
+
+
+  index.
+  search('John')
+  .then(({ hits }) => {
+    console.log(hits);
+ 
+
+
+  })
+  .catch(err=>{
+        console.log(err)
+}) -->
+
+
+ 
+
+<!-- </script> -->
+
+<body>
+    <div class="parent">
+         <h3>Search Engine</h3>
+    <input id="searchinput" type="text" placeholder="search for an item">
+    <div class="results">
+        <div class="result">
+            <img src="https://picsum.photos/140" alt="">
+            <h4>Products</h4>
+            <p>price: 2000</p>
+            <button>Purchase</button>
+        
+
+        </div>
+         <div class="result">
+            <img src="https://picsum.photos/140" alt="">
+            <h4>Products</h4>
+            <p>price: 2000</p>
+            <button>Purchase</button>
+        
+
+        </div>
+         <div class="result">
+            <img src="https://picsum.photos/140" alt="">
+            <h4>Products</h4>
+            <p>price: 2000</p>
+            <button>Purchase</button>
+        
+
+        </div>
+         <div class="result">
+            <img src="https://picsum.photos/140" alt="">
+            <h4>Products</h4>
+            <p>price: 2000</p>
+            <button>Purchase</button>
+        
+
+        </div>
+         <div class="result">
+            <img src="https://picsum.photos/140" alt="">
+            <h4>Products</h4>
+            <p>price: 2000</p>
+            <button>Purchase</button>
+        
+
+        </div>
+         <div class="result">
+            <img src="https://picsum.photos/140" alt="">
+            <h4>Products</h4>
+            <p>price: 2000</p>
+            <button>Purchase</button>
+        
+
+        </div>
+    </div>
+    
+
+    
+</body>
+<script type="module" src="./index.js"></script>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background: #90caf9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent{
+           width: 60vw;
+
+    }
+    h3{
+        font-size: 3rem;
+    }
+    input{
+        border: none;
+        border-bottom: 0.6px solid blue ;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #7cb342;
+        width: 110%;
+        outline: none;
+        margin-top: 5vh;
+
+    }
+    .results{
+         display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+    }
+    .result{
+       background: white;
+        border: 0.2px solid grey;
+        border-radius: 16px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    button{
+        background: darkcyan;
+        color: white;
+        font-weight: bold;
+        padding: 0.8rem;
+        border-radius: 12px;
+        border: none;
+        margin: 0.6rem 0;
+    }
+    img{
+        height: 100px;
+    }
+</style>
